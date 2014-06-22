@@ -54,7 +54,7 @@ for datum in data:
 				result[match.group(0)]['max'] = road[match.group(0)]['maxTransaction']
 				result[match.group(0)]['min'] = road[match.group(0)]['minTransaction']
 			else:	# Update result
-				maxRecord['address'] += match.group(0)
+				maxRecord['address'] += match.group(0) + ","
 				result[match.group(0)] = dict()
 				result[match.group(0)]['address'] = datum[u'土地區段位置或建物區門牌']
 				result[match.group(0)]['max'] = road[match.group(0)]['maxTransaction']
